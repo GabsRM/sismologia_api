@@ -22,8 +22,6 @@ class Api::FeaturesController < ApplicationController
     render json: response
   end
 
-  private
-
   def serialize_feature(feature)
     {
       id: feature.id,
@@ -46,4 +44,20 @@ class Api::FeaturesController < ApplicationController
       }
     }
   end
+  
+  def create_comments
+    feature = Feature.find(params[:id])
+    comment =feature.comment.build(comment_params)
+
+    if comment.save 
+      render json: comment, status: :created
+    else
+      render json: { errors: comment.errors.full_messages }, status: :unprocessable_entity
+  end
+  private
+
+  def comment_params
+    params.require(:comment).permit(:body)
+  end
+end
 end
