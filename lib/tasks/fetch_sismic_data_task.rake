@@ -4,7 +4,7 @@ namespace :fetch_sismic_data do
     require 'open-uri'
     require 'json'
 
-    url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson'
+    url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson?starttime=2024-03-10T00:00:00Z'
     response = URI.open(url)
     data = JSON.parse(response.read)
 
