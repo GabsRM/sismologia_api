@@ -1,6 +1,7 @@
 Comandos para correr la api
 
 bundle install
+
 rails db:migrate
 
 tarea: 
