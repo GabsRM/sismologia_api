@@ -1,24 +1,12 @@
-# README
+Comandos para correr la api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+bundle install
+rails db:migrate
 
-Things you may want to cover:
+tarea: 
 
-* Ruby version
+rake fetch_sismic_data:fetch
 
-* System dependencies
+IMPORTANTE: correr la api en el puerto 3000
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails s -p 3000
