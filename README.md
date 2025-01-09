@@ -1,13 +1,13 @@
-Comandos para correr la api
+## Before to run the API
 
 bundle install
 
 rails db:migrate
 
-tarea: 
+## Task: 
 
 rake fetch_sismic_data:fetch
 
-IMPORTANTE: correr la api en el puerto 3000
+## Run the API
 
 rails s -p 3000
