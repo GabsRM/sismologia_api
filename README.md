@@ -1,13 +1,13 @@
 ## Before to run the API
 
-bundle install
+`bundle install`
 
-rails db:migrate
+`rails db:migrate`
 
 ## Task: 
 
-rake fetch_sismic_data:fetch
+`rake fetch_sismic_data:fetch`
 
 ## Run the API
 
-rails s -p 3000
+`rails s -p 3000`
