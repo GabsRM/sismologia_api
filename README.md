@@ -1,4 +1,4 @@
-## Before to run the API
+## Before to start the API
 
 `bundle install`
 
@@ -8,6 +8,6 @@
 
 `rake fetch_sismic_data:fetch`
 
-## Run the API
+## Start the API
 
 `rails s -p 3000`
